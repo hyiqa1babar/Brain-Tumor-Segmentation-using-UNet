@@ -60,12 +60,7 @@ Follow these instructions to set up and run the application locally.
     google-generativeai
     ```
 
-4.  **Download the UNet Model Checkpoint:**
-    The application is designed to automatically download the model checkpoint if it's not found. However, for a robust setup, you can manually download it:
-    * **Direct Download Link:** `https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/HATpl02lA0ykn9aAU9K6sA/checkpoint-epoch-29.pt`
-    * Save this file as `checkpoint-epoch-29.pt` in the root directory of your project.
-
-5.  **Set up Google Gemini API Key:**
+4.  **Set up Google Gemini API Key:**
     The provided code uses a placeholder API key. For actual use, it's highly recommended to use Streamlit's secrets management.
     * Create a `.streamlit` folder in your project's root directory.
     * Inside `.streamlit`, create a file named `secrets.toml`.
