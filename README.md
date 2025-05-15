@@ -73,7 +73,7 @@ Follow these instructions to set up and run the application locally.
         ```toml
         GEMINI_API_KEY = "YOUR_GEMINI_API_KEY_HERE"
         ```
-    * Replace `"AIzaSyCAE_UGFvjlMHdwpHgXWGkufPNOP4xR5O8"` in `App.py` with `st.secrets["GEMINI_API_KEY"]` for the `api_key` variable within `initialize_gemini_api()`.
+    * Replace API key in `App.py` with `st.secrets["GEMINI_API_KEY"]` for the `api_key` variable within `initialize_gemini_api()`.
 
 ### Running the Application
 
