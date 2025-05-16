@@ -612,7 +612,7 @@ def main():
 
     # Sidebar configuration
     with st.sidebar:
-        st.image("C:/Users/user/PycharmProjects/PythonProject1/projlogo.png", use_column_width=True)
+        st.image("logo.png", use_column_width=True)
         st.markdown("### Model Configuration")
 
         # Segmentation threshold
