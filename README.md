@@ -61,7 +61,49 @@ Follow these instructions to set up and run the application locally.
     ```
 
 4.  **Set up Google Gemini API Key:**
-    The provided code uses a placeholder API key. For actual use, it's highly recommended to use Streamlit's secrets management.
+    The provided code uses a placeholder API key. For actual use, it's highly recommended to use Streamlit's secrets management.But first you will need an API key
+    
+    ✅ How to Get Your Gemini (Generative AI) API Key
+Step 1: Create or Select a Project
+Click the Select a project button at the top. Then:
+Either create a new project or select an existing one.
+Give it a name like "GeminiApp".
+
+Step 2: Enable the Gemini API
+Once you're inside the project:
+
+Click the top-left menu (☰) > APIs & Services > Library.
+Search for:
+
+Gemini API or
+
+Generative Language API (under Vertex AI API or PaLM API)
+Click it, then press Enable.
+
+Step 3: Create Credentials (API Key)
+Go to the left menu again:
+
+APIs & Services > Credentials
+Click + Create Credentials > API key
+
+Your key will be generated. Copy and save it securely.
+(Optional but recommended) Restrict the key to only the Gemini API for safety.
+
+Step 4: Use the Key in Your App
+Put it into your .env file like this:
+
+env
+Copy
+Edit
+GEMINI_API_KEY=your-generated-api-key
+Or into your secrets.toml (if using Streamlit Secrets):
+
+toml
+Copy
+Edit
+[general]
+GEMINI_API_KEY = "your-generated-api-key"
+
     * Create a `.streamlit` folder in your project's root directory.
     * Inside `.streamlit`, create a file named `secrets.toml`.
     * Add your Gemini API key to `secrets.toml`:
